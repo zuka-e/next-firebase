@@ -19,6 +19,7 @@ const customJestConfig: Config.InitialOptions = {
   roots: ['<rootDir>/src/', '<rootDir>/test/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^@test/(.*)$': '<rootDir>/test/$1',
   },
   verbose: true,
 };
