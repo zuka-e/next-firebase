@@ -17,6 +17,7 @@ const customJestConfig: Config.InitialOptions = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   rootDir: '.',
   roots: ['<rootDir>/src/', '<rootDir>/test/'],
+  testPathIgnorePatterns: ['<rootDir>/.*\\/?cypress/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@test/(.*)$': '<rootDir>/test/$1',
