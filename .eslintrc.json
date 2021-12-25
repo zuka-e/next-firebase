@@ -4,10 +4,8 @@
   "overrides": [
     // Only uses Testing Library lint rules in test files
     {
-      "files": [
-        "**/__tests__/**/*.[jt]s?(x)",
-        "**/?(*.)+(spec|test).[jt]s?(x)"
-      ],
+      "files": ["**/test/**/*.[jt]s?(x)"],
+      "excludedFiles": "**/cypress/**/*",
       "extends": ["plugin:testing-library/react"]
     }
   ]
