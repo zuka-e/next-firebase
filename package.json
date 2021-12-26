@@ -8,7 +8,9 @@
     "lint": "next lint",
     "prettier-fix": "prettier --write .",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "cypress": "cypress open --project test",
+    "cypress:headless": "cypress run --project test"
   },
   "dependencies": {
     "next": "12.0.7",
