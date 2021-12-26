@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // be explicit about types included to avoid clashing with Jest types
+    "types": ["cypress"],
+    "isolatedModules": false
+  }
+}
